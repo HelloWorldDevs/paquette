@@ -1,0 +1,28 @@
+a.btn,
+button.btn {
+  background-color: $c-button-background;
+  color: $c-button-font;
+  border: 2px solid $c-button-border;
+  &:hover, &:focus {
+    background-color: darken($c-button-background, 15% );
+    text-decoration: none;
+    color: $c-button-font;
+  }
+  font-family: $ff-neuton;
+
+  border-radius: 10px;
+
+  padding: $spacing-sm $spacing-md;
+  @media screen and (max-width: $width-lg) {
+
+  }
+  @media screen and (max-width: $width-md) {
+
+  }
+  @media screen and (max-width: $width-sm) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: $width-xs) {
+  }
+
+}

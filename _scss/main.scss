@@ -16,9 +16,9 @@
 //           Globals
 //=================================
 
-@import "globals/_breakpoints.scss";
-@import "globals/_fonts.scss";
+@import "globals/_vars.scss";
 @import "globals/_colors.scss";
+@import "globals/_fonts.scss";
 
 
 //=================================
@@ -26,26 +26,23 @@
 //=================================
 
 
-@import "componenets/_phone-slab.scss";
+@import "componenets/_buttons";
+@import "componenets/_backgrounds.scss";
+@import "componenets/_fixes.scss";
+@import "componenets/_modal.scss";
 @import "componenets/_owl-carousel.scss";
-@import "componenets/_services-modals.scss";
-@import "componenets/_location.scss";
-@import "componenets/_specials.scss";
-@import "componenets/_footer.scss";
-@import "componenets/_ken_burns.scss";
 
 
+@import "sections/footer";
+@import "sections/location";
+@import "sections/phone-slab";
+@import "sections/specials";
 
 
 section {
   background-size: cover;
 }
-#google-map5 {
-  height: 800px;
-  @media (max-width: $width-md) {
-    height: 300px;
-  }
-}
+
 
 .section-padding {
   padding: 60px 0px;
@@ -54,113 +51,11 @@ section {
   }
 }
 
-.footer-padding {
-  padding: 40px 0px;
+
+#google-map5 {
+  height: 800px;
   @media (max-width: $width-md) {
-    padding: 20px 0px;
-  }
-}
-
-
-.margin-btm {
-  margin-bottom: 40px;
-}
-
-.margin-btm-half {
-  margin-bottom: 20px;
-}
-
-.margin-btm-no {
-  margin-bottom: 0px !important;
-}
-
-.margin-btm-2x {
-  margin-bottom: 80px;
-}
-
-.margin-top {
-  margin-top: 30px;
-}
-
-.margin-top-2x {
-  margin-top: 60px;
-}
-
-.margin-top-2p {
-  margin-top: 20%;
-}
-
-.margin-top-3p {
-  margin-top: 100px;
-  @media (max-width: $width-lg) {
-    margin-top: 70px;
-  }
-}
-
-.margin-top-md {
-  @media (max-width: $width-md) {
-    margin-top: 30px;
-  }
-}
-
-.padding-reg {
-  padding: 30px;
-}
-
-.padding-vert-half {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.padding-vert {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.padding-vert-2x {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.padding-hor {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.padding-btm {
-  padding-bottom: 30px;
-}
-
-.padding-btm-2x {
-  padding-bottom: 60px;
-}
-
-.padding-right {
-  padding-right: 45px;
-}
-
-.padding-left {
-  padding-left: 45px;
-}
-
-.line-height-no {
-  line-height: 1.0;
-}
-
-.center-md {
-  @media (max-width: $width-md) {
-    text-align: center;
-  }
-}
-
-#content .line-height-small {
-  line-height: 1.3;
-}
-
-.bg-centered {
-  background-position: center;
-  @media (max-width: $width-md) {
-    //background-position: left;
+    height: 300px;
   }
 }
 
@@ -342,10 +237,6 @@ button[class=close] {
   @media screen and (max-width: 1050px) {
     display: none;
   }
-}
-
-.small-bottom-border {
-  border-bottom: 5px solid white;
 }
 
 #section-specials {

@@ -144,48 +144,6 @@ h6 {
 	}
 }
 
-.btn {
-	padding: 17px 15px;
-	@media screen and (max-width: $width-lg) {
-		padding: 12px 15px;
-	}
-	@media screen and (max-width: $width-md) {
-		padding: 10px 15px;
-	}
-}
-
-a.btn,
-button.btn {
-	font-family: 'Oxygen', sans-serif ;
-	background-color: #FF7A00;
-	color: #FFF;
-	border: 2px solid white;
-	border-radius: 33px;
-	font-size: 20px;
-	font-weight: 400;
-	padding: 10px 60px;
-	@media screen and (max-width: $width-lg) {
-		padding: 12px 30px;
-	}
-	@media screen and (max-width: $width-md) {
-		padding: 10px 30px;
-	}
-	@media screen and (max-width: $width-sm) {
-		font-size: 18px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	@media screen and (max-width: $width-xs) {
-	}
-}
-
-.btn:hover, .btn:focus, .btn.focus {
-	color: #FFF;
-	background-color: #ba5a00;
-	text-decoration: none;
-}
-
-
 
 p {
 	font-size: 16px;
