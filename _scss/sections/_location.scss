@@ -84,3 +84,34 @@ table {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+.hours .row {
+  @media (max-width: $width-lg) {
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.left-hours-fix {
+  padding-left: 10%;
+  @media (max-width: $width-lg) {
+    padding-left: 30%;
+
+  }
+  @media (max-width: 480px) {
+    padding-left: 7%;
+
+  }
+  @media (max-width: $width-sm) {
+
+  }
+}
+
+#google-map5 {
+  height: 800px;
+  @media (max-width: $width-md) {
+    height: 300px;
+  }
+}

@@ -1,5 +1,6 @@
 .services-modals {
   & .modal-title {
+      padding-top: 10px;
   }
   & p {
     padding-bottom: 15px;
@@ -13,4 +14,9 @@
 button.close {
   font-size: 35px;
   color: #373737;
+}
+
+
+button[class=close] {
+  font-size: 50px;
 }

@@ -1,0 +1,10 @@
+
+#section-insurance {
+  background-image:url('/assets/membership-row-reisig.jpg');
+  @media (max-width: $width-sm) {
+    background-image: none;
+    & .insurance-mobile-fix {
+      margin-top: -100px;
+    }
+  }
+}
