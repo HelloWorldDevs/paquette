@@ -1,6 +1,14 @@
 .phone-slab {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  background-color: $c-teal-light;
+  .container {
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-md;
+
+  }
+
+  .row:first-child {
+    padding-bottom: $spacing-sm;
+  }
 
   h1,
   h2,
@@ -9,6 +17,7 @@
   h5,
   h6 {
     line-height: $lh-sm;
+    margin-bottom: 0;
   }
 
   h3 {
@@ -17,12 +26,20 @@
     }
   }
 
-  &-topbr {
-    border-top: 5px solid #14718a;
+  .text {
+    font-family: $ff-neuton;
+    color: $c-black-blue;
   }
+
+  .phone-number {
+    font-family: $ff-oswald;
+    color: $c-black-blue;
+  }
+
   &__left {
     text-align: right;
-    border-right: solid 2px #3A2A31;
+    border-right: solid 2px $c-white;
+    margin-top: 5px;
     @media screen and (max-width: $width-md) {
       text-align: center;
       border-right: none;
@@ -34,7 +51,6 @@
   }
   &__right {
     text-align: left;
-    margin-top: 5px;
     @media screen and (max-width: $width-md) {
       text-align: center;
     }
