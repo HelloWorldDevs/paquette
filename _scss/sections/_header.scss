@@ -1,15 +1,30 @@
-@mixin nav-color($child, $color) {
-  li:nth-child(#{$child}) {
-    & a {
-      color: $color;
-      &:hover {
+@mixin nav-color($color, $child:false) {
+  @if $child {
+    li:nth-child(#{$child}) {
+      & a {
         color: $color;
+        &:hover {
+          color: $color;
+        }
+        &>div {
+          color: $color;
+        }
       }
-      &>div {
+    }
+  } @else {
+    li {
+      & a {
         color: $color;
+        &:hover {
+          color: $color;
+        }
+        &>div {
+          color: $color;
+        }
       }
     }
   }
+
 }
 
 
@@ -31,9 +46,10 @@
     margin-right: 0;
     border-right: none;
 
-    @include nav-color(1, $c-brick);
-    @include nav-color(2, $c-blue);
-    @include nav-color(3, $c-teal);
+    @include nav-color($c-black);
+    @include nav-color($c-brick, 1);
+    @include nav-color($c-blue, 2);
+    @include nav-color($c-teal, 3);
   }
   
 }
