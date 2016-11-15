@@ -1,16 +1,38 @@
-
-#primary-menu-trigger {
-  font-size: 30px;
-  pointer-events: auto;
+@mixin nav-color($child, $color) {
+  li:nth-child(#{$child}) {
+    & a {
+      color: $color;
+      &:hover {
+        color: $color;
+      }
+      &>div {
+        color: $color;
+      }
+    }
+  }
 }
 
-#header.full-header #primary-menu > ul {
-  margin-right: 0;
-  border-right: none;
+
+#header.full-header {
+  #primary-menu-trigger {
+    font-size: 30px;
+    pointer-events: auto;
+  }
+  
+  & #logo {
+    padding-right: 0;
+    margin-right: 0px;
+    border-right: none;
+  }
+
+  & #primary-menu > ul {
+    margin-right: 0;
+    border-right: none;
+
+    @include nav-color(1, $c-brick);
+    @include nav-color(2, $c-blue);
+    @include nav-color(3, $c-teal);
+  }
+  
 }
 
-#header.full-header #logo {
-  padding-right: 0;
-  margin-right: 0px;
-  border-right: none;
-}
