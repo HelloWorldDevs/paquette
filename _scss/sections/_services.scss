@@ -16,4 +16,21 @@
       padding-bottom: $spacing-lg;
     }
   }
+
+  .bottom {
+    .container {
+      padding-top: $spacing-lg;
+      padding-bottom: $spacing-lg;
+    }
+    h3 {
+      line-height: $lh-sm;
+      padding-top: $spacing-sm;
+      padding-bottom: $spacing-sm;
+      margin-bottom: 0;
+      color: $c-teal;
+    }
+    p:last-child {
+      padding-bottom: $spacing-sm;
+    }
+  }
 }
