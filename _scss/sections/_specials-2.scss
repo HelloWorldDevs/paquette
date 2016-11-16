@@ -81,5 +81,11 @@
   .row {
     display: flex;
     padding-bottom: $spacing-xl;
+    @media screen and (max-width: $width-sm) {
+      display: block;
+      .card {
+        margin-bottom: $spacing-md;
+      }
+    }
   }
 }
