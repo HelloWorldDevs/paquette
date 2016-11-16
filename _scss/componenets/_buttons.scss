@@ -1,5 +1,8 @@
 a.btn,
 button.btn {
+  font-family: $ff-neuton;
+  text-transform: uppercase;
+
   background-color: $c-button-background;
   color: $c-button-font;
   border: 2px solid $c-button-border;
@@ -8,14 +11,14 @@ button.btn {
     text-decoration: none;
     color: $c-button-font;
   }
-  font-family: $ff-neuton;
 
   border-radius: 10px;
 
   padding: $spacing-sm $spacing-md;
 
+  font-size: 18px;
   @media screen and (max-width: $width-sm) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   &.shadowed {
