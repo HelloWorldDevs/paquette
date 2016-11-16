@@ -12,10 +12,24 @@ a[href="http://www.tysonsteele.com/"] {
 
 #section-reviews {
   background-image: url('/assets/reviews-bkgd.jpg');
+  background-position: center center;
+  background-size: cover;
 
   .heading {
     text-align: center;
     color: $c-white;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding-top: $spacing-lg;
+  }
+
+  //Link on bottom of reviews
+  .bf-spn,
+  .bf-pro {
+    color: $c-white !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding-top: $spacing-sm;
+    padding-bottom: $spacing-xl;
+    font-family: $ff-neuton;
+    font-size: 14px !important;
   }
 }
