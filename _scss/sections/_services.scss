@@ -1,0 +1,19 @@
+#section-services {
+  .top {
+    padding-top: $spacing-lg;
+    background-color: $c-teal-dark;
+    h2 {
+      color: $c-white;
+      text-align: center;
+    }
+    h3, p {
+      color: $c-white;
+    }
+    p:nth-child(3) {
+      font-style: italic;
+    }
+    .row {
+      padding-bottom: $spacing-lg;
+    }
+  }
+}
