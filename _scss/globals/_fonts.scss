@@ -20,10 +20,11 @@ h6,
 #logo,
 #primary-menu ul li > a {
 	font-family: $ff-oswald;
+	font-weight: 400;
 }
 
 p {
-	margin-bottom: 0;
+	margin-bottom: $spacing-sm;
 }
 
 /* ----------------------------------------------------------------

@@ -1,30 +1,5 @@
 .phone-slab {
   background-color: $c-teal-light;
-  .container {
-    padding-top: $spacing-md;
-    padding-bottom: $spacing-md;
-
-  }
-
-  .row:first-child {
-    padding-bottom: $spacing-sm;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: $lh-sm;
-    margin-bottom: 0;
-  }
-
-  h3 {
-    @media screen and (max-width: $width-md) {
-      margin-bottom: 30px;
-    }
-  }
 
   .text {
     font-family: $ff-neuton;
@@ -36,6 +11,25 @@
     color: $c-black-blue;
   }
 
+  .container {
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-md;
+  }
+
+  h3,
+  h5,
+  h6 {
+    line-height: $lh-sm;
+    margin-bottom: 0;
+  }
+  h3 {
+    @media screen and (max-width: $width-md) {
+      margin-bottom: $spacing-md;
+    }
+  }
+  .row:first-child {
+    padding-bottom: $spacing-sm;
+  }
   &__left {
     text-align: right;
     border-right: solid 2px $c-white;
