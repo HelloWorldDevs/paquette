@@ -76,7 +76,8 @@
 
   new Swiper('.swiper-container', {
     speed: 400,
-    autoplay: 7000
+    autoplay: false,
+    loop: true
   });
 
   $('#google-map5').gMap({
