@@ -1,10 +1,21 @@
-#bf-revz-widget-524794445 {
+#bf-revz-widget-1049750438 {
+  //fix for iphone issue
   max-height: 1000px;
 }
 
 a[href="http://www.tysonsteele.com/"] {
-  color: #FFF;
+  color: $c-white;
   &:hover {
     text-decoration: underline !important;
+  }
+}
+
+#section-reviews {
+  background-image: url('/assets/reviews-bkgd.jpg');
+
+  .heading {
+    text-align: center;
+    color: $c-white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
 }
