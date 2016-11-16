@@ -45,4 +45,15 @@
       padding-bottom: $spacing-sm;
     }
   }
+
+  #lanap {
+    .modal-title {
+      color: $c-black-blue;
+    }
+    .close {
+      color: $c-black-blue;
+      font-size: 30px;
+      opacity: 0.8;
+    }
+  }
 }
