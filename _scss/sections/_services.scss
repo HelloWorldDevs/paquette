@@ -17,6 +17,18 @@
     }
   }
 
+  .mobile-text {
+    padding-top: $spacing-sm;
+    p:nth-child(2) {
+      font-style: italic;
+      color: $c-teal;
+    }
+    button {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   .bottom {
     .container {
       padding-top: $spacing-lg;
