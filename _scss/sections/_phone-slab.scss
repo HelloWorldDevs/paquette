@@ -53,6 +53,10 @@
     @media screen and (max-width: $width-xs) {
     }
   }
+
+  //Custom break line color for Paquette
+  .phone-slab-2 &__left {
+    border-right: solid 2px $c-black-blue;
+    margin-top: 0;
+  }
 }
-
-
