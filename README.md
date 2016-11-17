@@ -12,7 +12,7 @@ Install node dependencies:
 
 Compile site:
 
-    npm run compile:css
+    npm run compile
 
 Compile site, start watches, and serve:
 
@@ -21,6 +21,12 @@ Compile site, start watches, and serve:
 Deploy site:
 
     npm run deploy
+
+# Sass
+
+See [sassdoc](http://sassdoc.com/) docs at `./sassdoc` (at http://localhost:3002/sassdoc after `npm start`)
+
+Add more sassdoc annotations like `/// @param` by seeing [docs here](http://sassdoc.com/annotations).
 
 # Troubleshooting
 
