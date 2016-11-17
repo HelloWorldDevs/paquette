@@ -1,3 +1,16 @@
+/// iPhone Form in Modal Fix
+/// @group fixes
+/// @example #requestAppointmentForm { @include iPhoneFormFix(); }
+@mixin iPhoneFormFix() {
+  input[type='text'],
+  input[type='email'],
+  input[type='phone'],
+  textarea {
+    font-size: 16px;
+  }
+}
+
+
 .services-modals {
   & .modal-title {
       padding-top: 10px;
@@ -18,18 +31,6 @@ button.close {
   top: 10px;
   color: $c-black-blue;
   opacity: 0.8;
-}
-
-/// iPhone Form in Modal Fix
-/// @group fixes
-/// @example #requestAppointmentForm { @include iPhoneFormFix(); }
-@mixin iPhoneFormFix() {
-  input[type='text'],
-  input[type='email'],
-  input[type='phone'],
-  textarea {
-    font-size: 16px;
-  }
 }
 
 #requestAppointmentForm {
