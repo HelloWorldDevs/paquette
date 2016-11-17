@@ -1,14 +1,6 @@
-.team-carousel{
-  text-align: center;
-  & img {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 250px;
-  }
-}
-
-
-.img-hover-plus {
+/// Hover Effect - Plus Sign with Darken
+/// @group effects
+@mixin hover-plus() {
   margin: 0 auto;
   display: inline-block;
   position: relative;
@@ -33,6 +25,10 @@
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.37);
   }
+}
+
+.img-hover-plus {
+  @include hover-plus();
 }
 
 .owl-carousel .owl-nav [class*=owl-] {
