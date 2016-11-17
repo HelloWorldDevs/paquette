@@ -20,3 +20,18 @@ button.close {
   opacity: 0.8;
 }
 
+/// iPhone Form in Modal Fix
+/// @group fixes
+/// @example #requestAppointmentForm { @include iPhoneFormFix(); }
+@mixin iPhoneFormFix() {
+  input[type='text'],
+  input[type='email'],
+  input[type='phone'],
+  textarea {
+    font-size: 16px;
+  }
+}
+
+#requestAppointmentForm {
+  @include iPhoneFormFix;
+}
