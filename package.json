@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-
+  "dependencies": {
+    "browser-sync": "^2.18.1",
+    "node-sass": "^3.13.0"
   },
+  "devDependencies": {},
   "scripts": {
     "compile:css": "node-sass --output-style=expanded --source-map-embed _scss/main.scss css/main.css",
     "watch:css": "node-sass --watch --output-style=expanded --source-map-embed _scss/main.scss css/main.css",

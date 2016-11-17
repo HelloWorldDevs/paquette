@@ -42,20 +42,43 @@ h6 {
 	line-height: 1.5;
 }
 
-h1 {
-	font-size: 72px;
+@mixin font-size($xl, $lg, $md: 18px, $sm: 16px, $xs: 14px) {
+	font-size: $xl;
 	@media screen and (max-width: $width-lg) {
-		font-size: 65px;
+		font-size: $lg;
 	}
 	@media screen and (max-width: $width-md) {
-		font-size: 55px;
+		font-size: $md;
 	}
 	@media screen and (max-width: $width-sm) {
-		font-size: 44px;
+		font-size: $sm;
 	}
 	@media screen and (max-width: $width-xs) {
-		font-size: 28px;
+		font-size: $xs;
 	}
+}
+
+@mixin h1() {
+	@include font-size(72px, 65px, 55px, 44px, 28px);
+	@include font-size(72px, 65px);
+	//font-size: 72px;
+	//@media screen and (max-width: $width-lg) {
+	//	font-size: 65px;
+	//}
+	//@media screen and (max-width: $width-md) {
+	//	font-size: 55px;
+	//}
+	//@media screen and (max-width: $width-sm) {
+	//	font-size: 44px;
+	//}
+	//@media screen and (max-width: $width-xs) {
+	//	font-size: 28px;
+	//}
+}
+
+.h1,
+h1 {
+	@include h1();
 }
 
 h2 {
