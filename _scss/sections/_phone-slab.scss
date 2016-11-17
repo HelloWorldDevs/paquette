@@ -9,6 +9,7 @@
   .phone-number {
     font-family: $ff-oswald;
     color: $c-black-blue;
+    a:hover { color: $c-black-blue !important; }
     @media screen and (max-width: $width-md) {
       margin-bottom: $spacing-sm;
     }
@@ -62,7 +63,7 @@
     border-right: solid 2px $c-black-blue;
     margin-top: 0;
     @media screen and (max-width: $width-md) {
-      border-right: none ;
+      border-right: none;
     }
   }
 }

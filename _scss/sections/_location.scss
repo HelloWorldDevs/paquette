@@ -29,6 +29,7 @@
   .phone-number {
     line-height: $lh-sm;
     color: $c-brick;
+    a:hover { color: $c-brick !important; }
   }
   .btn {
     margin-bottom: $spacing-sm;
