@@ -9,6 +9,9 @@
   .phone-number {
     font-family: $ff-oswald;
     color: $c-black-blue;
+    @media screen and (max-width: $width-md) {
+      margin-bottom: $spacing-sm;
+    }
   }
 
   .container {
@@ -58,5 +61,8 @@
   .phone-slab-2 &__left {
     border-right: solid 2px $c-black-blue;
     margin-top: 0;
+    @media screen and (max-width: $width-md) {
+      border-right: none ;
+    }
   }
 }
