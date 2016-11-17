@@ -1,14 +1,14 @@
-# carlson
+# Dr. Paquette
+### By Joe Karasek _*11/17/16*_
+Tyson Steele Dr. Paquette
 
-Tyson Steele Dr. Carlson
-
-# Setup
+## Setup
 
 Install node dependencies:
 
     npm install
 
-# Usage
+## Usage
 
 Compile site:
 
@@ -22,13 +22,13 @@ Deploy site:
 
     npm run deploy
 
-# Sass
+## Sass
 
 See [sassdoc](http://sassdoc.com/) docs at `./sassdoc` (at http://localhost:3002/sassdoc after `npm start`)
 
 Add more sassdoc annotations like `/// @param` by seeing [docs here](http://sassdoc.com/annotations).
 
-# Troubleshooting
+## Troubleshooting
 
 Delete `node_modules` and re-install:
 
