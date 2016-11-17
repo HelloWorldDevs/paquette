@@ -21,7 +21,8 @@
     "serve": "browser-sync start --server --files=*.html,css/*.css",
     "start": "npm run clean && npm run compile:css && (npm run watch & npm run serve)",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "bash scripts/deploy.sh reisig"
+    "old:deploy": "bash scripts/deploy.sh reisig",
+    "deploy": "./deploy.py"
   },
   "author": "",
   "license": "ISC"

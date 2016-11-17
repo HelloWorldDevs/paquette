@@ -16,6 +16,7 @@ p {
 	margin-bottom: $spacing-sm;
 }
 
+/// @group typography
 @mixin headings() {
 	line-height: 1.5;
 	font-family: $ff-oswald;
@@ -36,6 +37,7 @@ p {
 
 /// Responsive Font Size
 /// Applies font-sizes for several breakpoints
+/// @group typography
 ///	@param $xl - size above `$width-lg`
 ///	@param $lg - size above `$width-md`
 ///	@param $md - size above `$width-sm`
