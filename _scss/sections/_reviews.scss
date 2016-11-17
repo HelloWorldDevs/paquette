@@ -1,6 +1,8 @@
 #bf-revz-widget-1049750438 {
   //fix for iphone issue
-  max-height: 1000px;
+  @media screen and (max-width: $width-xs) {
+    max-height: 600px;
+  }
 }
 
 a[href="http://www.tysonsteele.com/"] {

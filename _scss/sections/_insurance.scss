@@ -38,6 +38,7 @@
       color: $c-brick;
       font-family: $ff-neuton;
       line-height: $lh-xs;
+      margin-bottom: 0;
     }
     h4 {
       color: $c-teal;
@@ -53,6 +54,11 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.5);
       padding-left: $spacing-xl;
       padding-right: $spacing-xl;
+    }
+    .sub-text {
+      padding-top: $spacing-sm;
+      line-height: $lh-sm;
+
     }
   }
   
