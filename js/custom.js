@@ -113,14 +113,14 @@
 
   // kills menu offsets for tablet and mobile on load
   if ($(window).width() < 993) {
-    $('#primary-menu').find('a').attr('data-offset', '0');
+    $('#primary-menu').find('a').attr('data-offset', '-5');
   }
 
   // Fix scrollTo offsets on tablet and mobile versions (sets data offsets to zero)
   $(window).resize(function() {
     if ($(window).width() < 993) {
       // sets all menu offset to zero for mobile
-      $('#primary-menu').find('a').attr('data-offset', '0');
+      $('#primary-menu').find('a').attr('data-offset', '-5');
     } else {
       // resets all menu offsets to origin value
       $('#primary-menu').find('a').each(function(index) {

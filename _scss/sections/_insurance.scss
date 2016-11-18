@@ -23,6 +23,10 @@
   .text {
     width: 50%;
     padding: $spacing-xl;
+    @media screen and (max-width: $width-xs) {
+      padding-left: $spacing-sm;
+      padding-right: $spacing-sm;
+    }
     padding-top: $spacing-md;
 
     @media screen and (max-width: $width-md) {
@@ -39,10 +43,15 @@
       font-family: $ff-neuton;
       line-height: $lh-xs;
       margin-bottom: 0;
+      &.yolo {
+        margin-bottom: $spacing-md;
+      }
     }
     h4 {
       color: $c-teal;
       font-family: $ff-neuton;
+      margin-bottom: $spacing-sm;
+
     }
     h5 {
       font-family: $ff-neuton;
@@ -52,8 +61,8 @@
     }
     .btn {
       box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-      padding-left: $spacing-xl;
-      padding-right: $spacing-xl;
+      padding-top: $spacing-sm;
+      @include lr-padding(90px, 90px, 90px, 60px, 40px);
     }
     .sub-text {
       padding-top: $spacing-sm;

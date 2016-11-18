@@ -17,6 +17,10 @@ a[href="http://www.tysonsteele.com/"] {
   background-position: center center;
   background-size: cover;
 
+  padding-bottom: 30px;
+  @media screen and (max-width: $width-xs) {
+    padding-bottom: 80px;
+  }
   .heading {
     text-align: center;
     color: $c-white;

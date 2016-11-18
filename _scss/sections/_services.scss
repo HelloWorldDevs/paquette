@@ -29,6 +29,9 @@
     }
   }
 
+  button {
+    @include lr-padding(90px, 90px, 90px, 90px, 90px);
+  }
   .bottom {
     .container {
       padding-top: $spacing-lg;

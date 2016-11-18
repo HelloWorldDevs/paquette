@@ -55,6 +55,7 @@
       color: $c-black;
       margin-bottom: 0;
       line-height: $lh-sm;
+      margin-right: $spacing-sm;
       &.quoter {
         width: 50%;
         margin-left: auto;
@@ -78,6 +79,9 @@
       color: $c-black-pure;
       font-family: $ff-neuton;
       line-height: $lh-sm;
+    }
+    .btn {
+      @include lr-padding(80px, 60px, 60px);
     }
   }
 
