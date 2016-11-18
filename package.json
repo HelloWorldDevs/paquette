@@ -1,5 +1,5 @@
 {
-  "name": "dr_paquette",
+  "name": "paquette",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,13 +16,14 @@
     "clean": "rm -rf _site",
     "compile:sassdoc": "sassdoc _scss/",
     "watch:sassdoc": "nodemon --exec 'npm run compile:sassdoc' --ext scss ./_scss",
+    "open:sassdoc": "open sassdoc/index.html",
     "compile": "npm run compile:css & npm run compile:sassdoc",
     "watch": "npm run watch:css & npm run watch:sassdoc",
     "serve": "browser-sync start --server --files=*.html,css/*.css",
-    "start": "npm run clean && npm run compile:css && (npm run watch & npm run serve)",
+    "start": "npm run clean && npm run compile:css && npm run open:sassdoc && (npm run watch & npm run serve)",
     "test": "echo \"Error: no test specified\" && exit 1",
     "old:deploy": "bash scripts/deploy.sh reisig",
-    "deploy": "git push origin master && ./deploy.py"
+    "deploy": "git push origin master && ./deploy.py && open http://paquette.hwdevs.site"
   },
   "author": "",
   "license": "ISC"
