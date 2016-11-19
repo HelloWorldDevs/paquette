@@ -10,6 +10,19 @@
   }
 }
 
+/// Bootstrap 3 Modal Width Override - will override the default width of bootstrap's modal. Add .modal-wide to the bootstrap .modal in html (class="modal modal-wide")
+/// @group fixes
+/// @param {percentage} $width [90%] - Percentage of the width of the viewport you would like bootstrap's modal to be
+/// @example .modal { @include modal-width-override( 90% ); }
+@mixin modal-width-override($width: 80%) {
+  &.modal-wide .modal-dialog {
+    width: $width;
+  }
+  &.modal-wide .modal-body {
+    //overflow-y: auto;
+  }
+}
+
 
 .services-modals {
   & .modal-title {
