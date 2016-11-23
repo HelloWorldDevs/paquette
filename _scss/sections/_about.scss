@@ -1,0 +1,11 @@
+#section-about {
+  background-color: $c-white;
+  h2 {
+    margin-top: $spacing-sm;
+    color: $c-teal;
+  }
+  p:last-child {
+    color: $c-teal;
+    font-style: italic;
+  }
+}

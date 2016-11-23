@@ -6,144 +6,119 @@
 
 
 
-body { font-family: 'Oxygen', sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-#logo,
-#primary-menu ul li > a {
-	font-family: 'Oxygen', serif;
-	margin-bottom: 0;
+body {
+	font-family: $ff-neuton;
+	color: $c-black;
 	line-height: 1.5;
 }
 
 p {
-	margin-bottom: 0;
+	margin-bottom: $spacing-sm;
 }
+
+/// @group typography
+@mixin headings() {
+	line-height: 1.5;
+	font-family: $ff-oswald;
+	font-weight: 400;
+}
+
+
+#logo,
+#primary-menu ul li > a {
+	@include headings();
+}
+
 
 /* ----------------------------------------------------------------
 	You can change your Font Specific Settings here
 -----------------------------------------------------------------*/
 
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	line-height: 1.5;
+/// Responsive Font Size
+/// Applies font-sizes for several breakpoints
+/// @group typography
+///	@param $xl - size above `$width-lg`
+///	@param $lg - size above `$width-md`
+///	@param $md - size above `$width-sm`
+///	@param $sm - size above `$width-xs`
+///	@param $xs - size below `$width-xs`
+@mixin font-size($xl, $lg, $md: 18px, $sm: 16px, $xs: 14px) {
+	font-size: $xl;
+	@media screen and (max-width: $width-lg) {
+		font-size: $lg;
+	}
+	@media screen and (max-width: $width-md) {
+		font-size: $md;
+	}
+	@media screen and (max-width: $width-sm) {
+		font-size: $sm;
+	}
+	@media screen and (max-width: $width-xs) {
+		font-size: $xs;
+	}
 }
 
+@mixin h1() {
+	@include headings();
+	@include font-size(72px, 65px, 55px, 65px, 65px);
+}
+
+.h1,
 h1 {
-	font-size: 72px;
-	@media screen and (max-width: $width-lg) {
-		font-size: 65px;
-	}
-	@media screen and (max-width: $width-md) {
-		font-size: 55px;
-	}
-	@media screen and (max-width: $width-sm) {
-		font-size: 44px;
-	}
-	@media screen and (max-width: $width-xs) {
-		font-size: 28px;
-	}
+	@include h1();
 }
 
+
+@mixin h2() {
+	@include headings();
+	@include font-size(50px, 41px, 35px, 32px, 32px);
+}
+
+.h2,
 h2 {
-	font-size: 50px;
-	@media screen and (max-width: $width-lg) {
-		font-size: 41px;
-	}
-	@media screen and (max-width: $width-md) {
-		font-size: 35px;
-	}
-	@media screen and (max-width: $width-sm) {
-		font-size: 32px;
-	}
-	@media screen and (max-width: $width-xs) {
-		font-size: 28px;
-	}
-}
-.heading h2 {
-	margin-bottom: 30px;
+	@include h2();
 }
 
+@mixin h3() {
+	@include headings();
+	@include font-size(32px, 30px, 24px, 22px, 22px);
+}
+
+.h3,
 h3 {
-	font-size: 32px;
-	@media screen and (max-width: $width-lg) {
-		font-size: 30px;
-	}
-	@media screen and (max-width: $width-md) {
-		font-size: 24px;
-	}
-	@media screen and (max-width: $width-sm) {
-		font-size: 22px;
-	}
-	@media screen and (max-width: $width-xs) {
-		font-size: 20px;
-	}
-	&.phone-number {
-		font-size: 32px;
-		@media screen and (max-width: $width-lg) {
-			font-size: 30px;
-		}
-		@media screen and (max-width: $width-md) {
-		}
-		@media screen and (max-width: $width-sm) {
-		}
-		@media screen and (max-width: $width-xs) {
-		}
-	}
+	@include h3();
 }
 
+@mixin h4() {
+	@include headings();
+	@include font-size(28px, 22px, 20px, 22px, 22px);
+}
+
+.h4,
 h4 {
-	font-size: 28px;
-	@media screen and (max-width: $width-lg) {
-		font-size: 22px;
-	}
-	@media screen and (max-width: $width-md) {
-		font-size: 20px;
-	}
-	@media screen and (max-width: $width-sm) {
-		font-size: 22px;
-	}
-	@media screen and (max-width: $width-xs) {
-	}
+	@include h4();
 }
 
+@mixin h5() {
+	@include headings();
+	@include font-size(20px, 18px, 18px, 18px, 18px);
+}
+
+.h5,
 h5 {
-	font-size: 20px;
-	@media screen and (max-width: $width-lg) {
-		font-size: 18px;
-	}
-	@media screen and (max-width: $width-md) {
-	}
-	@media screen and (max-width: $width-sm) {
-	}
-	@media screen and (max-width: $width-xs) {
-	}
+	@include h5();
 }
 
+@mixin h6() {
+	@include headings();
+	@include font-size(18px, 18px, 17px, 17px, 17px);
+}
+
+.h6,
 h6 {
-	font-size: 18px;
-	@media screen and (max-width: $width-lg) {
-	}
-	@media screen and (max-width: $width-md) {
-		font-size: 17px;
-	}
-	@media screen and (max-width: $width-sm) {
-	}
-	@media screen and (max-width: $width-xs) {
-	}
+	@include h6();
 }
-
 
 p {
 	font-size: 16px;
@@ -159,34 +134,7 @@ p {
 }
 
 #primary-menu ul li > a {
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-transform: none;
-	font-size: 17px;
-	padding: 29px 14px;
-	@media screen and (max-width: 1300px) {
-		font-size: 15px;
-		padding: 29px 12px;
-		padding-bottom: 10px;
-	}
-	@media screen and (max-width: $width-lg) {
-		font-size: 15px;
-		letter-spacing: 0.7px;
-		padding: 29px 10px;
-		padding-bottom: 10px;
-	}
-	@media screen and (max-width: 1090px) {
-		font-size: 14px;
-	}
-	@media screen and (max-width: 991px) {
-		padding-left: 40px !important;
-		font-size: 18px;
-	}
-	@media screen and (max-width: $width-sm) {
-	}
-	@media screen and (max-width: $width-xs) {
-	}
-	padding-bottom: 10px;
+
 }
 
 .font-larger {

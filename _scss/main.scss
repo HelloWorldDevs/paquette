@@ -17,6 +17,7 @@
 //=================================
 
 @import "globals/_vars.scss";
+@import "globals/_mixins.scss";
 @import "globals/_colors.scss";
 @import "globals/_fonts.scss";
 
@@ -35,6 +36,7 @@
 @import "componenets/swiper-slider";
 
 
+@import "sections/about";
 @import "sections/footer";
 @import "sections/header";
 @import "sections/insurance";
@@ -42,4 +44,6 @@
 @import "sections/marquee";
 @import "sections/phone-slab";
 @import "sections/reviews";
-@import "sections/specials";
+@import "sections/specials-2";
+@import "sections/services";
+@import "sections/tour";

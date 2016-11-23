@@ -5,7 +5,7 @@
 
   HelloWorldDevs.prototype.noOrphans = function (selectors, exceptions) {
     $(selectors).not(exceptions).each(function () {
-      $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/, '&nbsp;$1'));
+      $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/, '<span style="font-family:  Helvetica, Arial, sans-serif">&nbsp;</span>$1'));
     });
   };
 
@@ -44,36 +44,6 @@
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid,.allow-orphan');
   HWD.mailForm('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
-  // initial carousel in modal
-  $('.team-carousel').owlCarousel({
-    items: 4,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 400,
-    nav: true,
-    dots: false,
-    navText: [
-      '<i class="icon-chevron-sign-left"></i>',
-      '<i class="icon-chevron-sign-right"></i>'
-    ],
-    autoplayTimeout: 6000,
-    autoplayHoverPause:true,
-    responsive : {
-      0 : {
-      items : 1
-      },
-      550 : {
-        items : 2
-      },
-      768 : {
-        items : 3
-      },
-      990 : {
-        items : 4
-      }
-    }
-  });
-
   $('.tour-carousel').owlCarousel({
     items: 1,
     loop: true,
@@ -82,8 +52,23 @@
     nav: true,
     dots: false,
     navText: [
-      '<i class="icon-chevron-sign-left"></i>',
-      '<i class="icon-chevron-sign-right"></i>'
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>'
+    ],
+    autoplayTimeout: 6000,
+    autoplayHoverPause:true
+  });
+
+  $('.tour-carousel-2').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 400,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>'
     ],
     autoplayTimeout: 6000,
     autoplayHoverPause:true
@@ -91,16 +76,17 @@
 
   new Swiper('.swiper-container', {
     speed: 400,
-    autoplay: 7000
+    autoplay: 7000,
+    loop: true
   });
 
   $('#google-map5').gMap({
-    address: '33.2119608,-87.515528',
+    address: '41.7138325,-71.4692699',
     maptype: 'ROADMAP',
     zoom: 15,
     markers: [
       {
-        address: "33.2123608,-87.520528"
+        address: "41.7138325,-71.4646699"
       }
     ],
     doubleclickzoom: false,
@@ -127,14 +113,14 @@
 
   // kills menu offsets for tablet and mobile on load
   if ($(window).width() < 993) {
-    $('#primary-menu').find('a').attr('data-offset', '0');
+    $('#primary-menu').find('a').attr('data-offset', '-5');
   }
 
   // Fix scrollTo offsets on tablet and mobile versions (sets data offsets to zero)
   $(window).resize(function() {
     if ($(window).width() < 993) {
       // sets all menu offset to zero for mobile
-      $('#primary-menu').find('a').attr('data-offset', '0');
+      $('#primary-menu').find('a').attr('data-offset', '-5');
     } else {
       // resets all menu offsets to origin value
       $('#primary-menu').find('a').each(function(index) {

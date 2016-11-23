@@ -1,6 +1,76 @@
 
 #section-insurance {
-  background-image:url('/assets/membership-row-reisig.jpg');
+  .wrapper {
+    display: flex;
+    @media screen and (max-width: $width-md) {
+      flex-direction: column;
+    }
+  }
+
+  .image {
+    width: 50%;
+    background-image: url('/assets/membership-photo.jpg');
+    background-size: cover;
+    background-position: center center;
+    order: -1;
+    img {  display: none;  }
+    @media screen and (max-width: $width-md) {
+      img {  display: block;  }
+      width: 100%;
+      order: 0;
+    }
+  }
+  .text {
+    width: 50%;
+    padding: $spacing-xl;
+    @media screen and (max-width: $width-xs) {
+      padding-left: $spacing-sm;
+      padding-right: $spacing-sm;
+    }
+    padding-top: $spacing-md;
+
+    @media screen and (max-width: $width-md) {
+      width: 100%;
+      text-align: center;
+    }
+    h2 {
+      color: $c-brick;
+      margin-bottom: 0;
+      line-height: $lh-sm;
+    }
+    h3 {
+      color: $c-brick;
+      font-family: $ff-neuton;
+      line-height: $lh-xs;
+      margin-bottom: 0;
+      &.yolo {
+        margin-bottom: $spacing-md;
+      }
+    }
+    h4 {
+      color: $c-teal;
+      font-family: $ff-neuton;
+      margin-bottom: $spacing-sm;
+
+    }
+    h5 {
+      font-family: $ff-neuton;
+    }
+    h6 {
+      font-family: $ff-neuton;
+    }
+    .btn {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      padding-top: $spacing-sm;
+      @include lr-padding(90px, 90px, 90px, 60px, 40px);
+    }
+    .sub-text {
+      padding-top: $spacing-sm;
+      line-height: $lh-sm;
+
+    }
+  }
+  
   @media (max-width: $width-sm) {
     background-image: none;
     & .insurance-mobile-fix {

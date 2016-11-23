@@ -1,0 +1,62 @@
+#section-services {
+  .top {
+    padding-top: $spacing-lg;
+    background-color: $c-teal-dark;
+    h2 {
+      color: $c-white;
+      text-align: center;
+    }
+    h3, p {
+      color: $c-white;
+    }
+    p:nth-child(3) {
+      font-style: italic;
+    }
+    .row {
+      padding-bottom: $spacing-lg;
+    }
+  }
+
+  .mobile-text {
+    padding-top: $spacing-sm;
+    p:nth-child(2) {
+      font-style: italic;
+      color: $c-teal;
+    }
+    button {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  button {
+    @include lr-padding(90px, 90px, 90px, 90px, 90px);
+  }
+  .bottom {
+    .container {
+      padding-top: $spacing-lg;
+      padding-bottom: $spacing-lg;
+    }
+    h3 {
+      line-height: $lh-sm;
+      padding-top: $spacing-sm;
+      padding-bottom: $spacing-sm;
+      margin-bottom: 0;
+      color: $c-teal;
+    }
+    p:last-child {
+      padding-bottom: $spacing-sm;
+    }
+  }
+
+  #lanap {
+    .modal-title {
+      color: $c-black-blue;
+    }
+    .close {
+      color: $c-black-blue;
+      font-size: 35px;
+      opacity: 0.8;
+    }
+  }
+}

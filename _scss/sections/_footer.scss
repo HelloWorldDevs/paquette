@@ -1,8 +1,18 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: #14718A;
+  background-color: $c-teal;
   border-top: none;
+  p {
+    float: left;
+    color: white;
+    @media screen and (max-width: $width-md) {
+      float: none;
+    }
+  }
+  @media screen and (max-width: $width-md) {
+    text-align: center;
+  }
 }
 
 
