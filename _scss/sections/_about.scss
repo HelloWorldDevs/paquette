@@ -1,5 +1,11 @@
 #section-about {
   background-color: $c-white;
+  .hiero {
+    background-image: url(../assets/team-section.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center top;
+  }
   h2 {
     margin-top: $spacing-sm;
     color: $c-teal;
@@ -7,5 +13,6 @@
   p:last-child {
     color: $c-teal;
     font-style: italic;
+    padding-bottom: $spacing-lg;
   }
 }

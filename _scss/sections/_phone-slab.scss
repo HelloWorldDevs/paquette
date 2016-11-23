@@ -9,10 +9,17 @@
   .phone-number {
     font-family: $ff-oswald;
     color: $c-black-blue;
-    a:hover { color: $c-black-blue !important; }
+    a:hover {
+      color: $c-black-blue !important;
+      text-decoration: none;
+    }
     @media screen and (max-width: $width-md) {
       margin-bottom: $spacing-sm;
     }
+  }
+  a.phone-number:hover {
+    color: $c-black-blue !important;
+    text-decoration: none;
   }
 
   .container {

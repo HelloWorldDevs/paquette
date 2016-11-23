@@ -121,7 +121,7 @@ h6 {
 }
 
 p {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 100;
 	@media screen and (max-width: $width-sm) {
 		font-size: 16px;
@@ -175,4 +175,8 @@ p {
 #section-services h5,
 #section-services-two h5 {
 	margin-bottom: 10px;
+}
+
+#content p {
+	line-height: $lh-lg;
 }

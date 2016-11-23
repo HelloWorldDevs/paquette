@@ -62,10 +62,10 @@
     .btn {
       box-shadow: 0 2px 4px rgba(0,0,0,0.5);
       padding-top: $spacing-sm;
+      margin-top:$spacing-md;
       @include lr-padding(90px, 90px, 90px, 60px, 40px);
     }
     .sub-text {
-      padding-top: $spacing-sm;
       line-height: $lh-sm;
 
     }

@@ -12,10 +12,12 @@
     background-image: url('/assets/slide3.jpg');
   }
 
-  .swiper-slide .row {
-    transform: translateY(-50%);
-    top: 50%;
-    position: relative;
+  .swiper-slide {
+    .vertical-center {
+      transform: translateY(-50%);
+      top: 50%;
+      position: relative;
+    }
   }
 
   .slide1 {
