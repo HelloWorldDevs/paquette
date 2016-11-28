@@ -2,7 +2,7 @@
   background-color: $c-white;
   .hiero {
     background-image: url(../assets/team-section.jpg);
-    height: 400px;
+    height: 600px;
     background-size: cover;
     background-position: center top;
   }
@@ -10,9 +10,12 @@
     margin-top: $spacing-sm;
     color: $c-teal;
   }
-  p:last-child {
+  div[class~="col-md-4"] {
     color: $c-teal;
     font-style: italic;
     padding-bottom: $spacing-lg;
+  }
+  .container {
+    margin-bottom: $spacing-lg;
   }
 }
