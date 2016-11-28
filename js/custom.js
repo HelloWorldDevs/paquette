@@ -101,17 +101,14 @@
     }
   });
 
-  var player;
-  function onYouTubePlayerAPIReady() {
 
-  }
-  //Stop a youTube video on modal close
-  //Requires you add enablejsapi=1 to the iframe in html
-  // $('#lanap').on('hide.bs.modal', function() {
-  //   console.log("Hello World!");
-  //   let player = new YT.Player('lanapVideo', {});
-  //   player.stopVideo();
-  // });
+  $(window).load(function() {
+    var player = new YT.Player('lanapVideo', {});
+    $('#lanap').on('hide.bs.modal', function() {
+      player.stopVideo();
+    });
+  });
+
 
 
   
